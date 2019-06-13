@@ -6,41 +6,47 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Gif or Jiff</title>
+
+  <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
+  <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
-  <div id="buttons">
-    <button data-person="arnold schwarzenegger">
-      I'll be back
-    </button>
-    <button data-person="michael j fox">
-      My happiness grows in direct proportion to my acceptance,
-      and in inverse proportion to my expectations.
-    </button>
 
-    <button data-person="sailor moon">
-      Girls have to be strong to protect the men they love
-    </button>
+  <div class="mdc-layout-grid">
 
-    <button data-person="naruto">
-      Believe it!
-    </button>
+    <div id="buttons-view"></div>
+    <div class="mdc-layout-grid__inner">
+      <div class="mdc-layout-grid__cell--span-8">
+        <section class="gif-container">
+          <span id="gifs-appear-here"></span>
+        </section>
+      </div>
 
-    <button data-person="kenshiro">
-      Omae Wa Mou Shindeiru!
-    </button>
+      <div class="mdc-layout-grid__cell--span-4">
 
-    <button data-person=“food-wars”>
-      FOOD WARS
-    </button>
 
+        <form id="love-form">
+          <label for="love-input">Add a relationship meme!</label>
+          <input type="text" id="love-input"><br>
+
+
+          <input id="add-love" type="submit" value="Add Love">
+        </form>
+      </div>
+
+    </div>
+  </div>
   </div>
 
-  <div id="gifs-appear-here"></div>
 
   <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
     crossorigin="anonymous"></script>
-  <script src="/assets/javascript/app.js"></script>
+  <script src="assets/javascript/app.js"></script>
+
 </body>
 
 </html>
