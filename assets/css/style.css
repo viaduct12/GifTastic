@@ -1,0 +1,35 @@
+button, div, form, input {
+  margin: 10px;
+}
+
+body {
+  background-image: url(../images/loveless.jpg);
+  background-size: cover;
+  background-repeat: none;
+}
+
+.gif-container .img-container{
+  /* position: relative; */
+  display: inline-flexbox;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+
+.img-container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.top-left{
+  position: absolute;
+  /* top: 8px;
+  left: 16px; */
+}
+
+span{
+  display: inline;
+  background-color: black;
+}
