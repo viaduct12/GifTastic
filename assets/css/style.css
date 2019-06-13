@@ -9,7 +9,6 @@ body {
 }
 
 .gif-container .img-container{
-  /* position: relative; */
   display: inline-flexbox;
   flex-direction: row;
   flex-wrap: wrap;
@@ -25,11 +24,8 @@ body {
 
 .top-left{
   position: absolute;
-  /* top: 8px;
-  left: 16px; */
 }
 
 span{
-  display: inline;
   background-color: black;
 }
